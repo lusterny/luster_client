@@ -9,6 +9,72 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/assets/can1.png": {
+		"ft": 32768,
+		"iS": 392617,
+		"oA": 0,
+		"oAP": "/assets/can1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/can2.png": {
+		"ft": 32768,
+		"iS": 462032,
+		"oA": 0,
+		"oAP": "/assets/can2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/can3.png": {
+		"ft": 32768,
+		"iS": 419220,
+		"oA": 0,
+		"oAP": "/assets/can3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/can4.png": {
+		"ft": 32768,
+		"iS": 398799,
+		"oA": 0,
+		"oAP": "/assets/can4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/can5.png": {
+		"ft": 32768,
+		"iS": 152245,
+		"oA": 0,
+		"oAP": "/assets/can5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/cloud.png": {
+		"ft": 32768,
+		"iS": 225966,
+		"oA": 0,
+		"oAP": "/assets/cloud.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/header-img.png": {
 		"ft": 32768,
 		"iS": 6559672,
