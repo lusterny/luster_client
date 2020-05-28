@@ -48,7 +48,7 @@ p{
   line-height: 30px;
   color:white;
   font-family: 'Inter', sans-serif;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
 }
 
 .scroll-menu {
@@ -56,4 +56,45 @@ p{
   overflow-y: hidden;
   overflow: auto;
   white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.can  {
+  display: inline-block;
+  padding: 50px;
+}
+
+.can img {
+  height: 500px;
+}
+
+.can button {
+  position:relative;
+  font-family: 'Inter', sans-serif;
+  left: 30%;
+  border-radius: 26px;
+  background-color: #FFD180;
+  box-shadow: 0 6px 12px 2px rgba(0,0,0,0.06);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.can button:hover {
+  /* border: 2px solid #FFD180; */
+  background-color: white;
+
+}
+
+.cloud-thing {
+    position: absolute;
+    padding-top: 200px;
+    width: 120vw;
 }
