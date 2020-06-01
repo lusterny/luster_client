@@ -44,7 +44,7 @@ h1 {
 .resp-container {
   position: relative;
  overflow: hidden;
- padding-top: 56.25%;
+ padding-top: 42%;
  /* change  paddingtop percent based on ratio of video. this one is for 9/16 */
 }
 
