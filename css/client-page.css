@@ -3,6 +3,10 @@
     src: url('font/Facit-Extrabold.otf') format('opentype');
 }
 
+html {
+  max-width: 1400px;
+}
+
 
 body{
   background-image: linear-gradient(#ED5E50, #F48658, #DB4A48);
@@ -12,6 +16,11 @@ iframe  {
   border: 4px solid #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 32px 48px -16px rgba(0,0,0,0.64);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -32,19 +41,26 @@ h1 {
   z-index: 1;
 }
 
-iframe {
+.resp-container {
+  position: relative;
+ overflow: hidden;
+ padding-top: 56.25%;
+ /* change  paddingtop percent based on ratio of video. this one is for 9/16 */
+}
+
+/* iframe {
   position: relative;
   z-index: 1;
   height: 42vw;
-}
+} */
 
 h2 {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 10vw;
   color:white;
   /* font-family: 'facit', sans-serif; */
-  font-family: 'Exo', sans-serif;
-  
+  font-family: 'Open Sans', sans-serif;
+
   font-weight: bolder;
   font-size: 40px;
 }
@@ -54,7 +70,7 @@ p{
   font-size: 20px;
   line-height: 30px;
   color:white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 20px;
 }
 
@@ -79,7 +95,7 @@ p{
 
 .can button {
   position:relative;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   left: 22%;
   border-radius: 26px;
   background-color: #FFD180;
