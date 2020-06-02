@@ -1,5 +1,5 @@
 .container {
-  /* max-width: calc(100vw - 40px); */
+  max-width: calc(100vw - 40px);
   margin: auto;
 }
 
@@ -8,18 +8,32 @@ body{
   background-image: linear-gradient(#ED5E50, #F48658, #DB4A48);
 }
 
+.header-image {
+  position: absolute;
+  top: 0;
+}
+
+.framing-container {
+  width: 80vw;
+  margin: auto;
+}
+
+.top-page{
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
 .resp-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 57%;
-  /* change  paddingtop percent based on ratio of video. this one is for 9/16 */
+  padding-top: 57.5%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-iframe  {
-  border: 4px solid #FFFFFF;
-  border-radius: 16px;
-  box-shadow: 0 32px 48px -16px rgba(0,0,0,0.64);
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -29,21 +43,11 @@ iframe  {
   height: 100%;
 }
 
-.header-image {
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 0;
+iframe {
+  border: 4px solid #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 32px 48px -16px rgba(0,0,0,0.64);
 }
-
-.top-page{
-  padding-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-
 
 
 
