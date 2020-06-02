@@ -185,6 +185,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/clouds.png": {
+		"ft": 32768,
+		"iS": 198740,
+		"oA": 0,
+		"oAP": "/assets/clouds.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/header-img.png": {
 		"ft": 32768,
 		"iS": 6559672,

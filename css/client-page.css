@@ -1,17 +1,19 @@
-@font-face {
-    font-family: 'facit';
-    src: url('font/Facit-Extrabold.otf') format('opentype');
-}
-
-html {
-  max-width: 1400px;
-  margin: 0 auto;
-
+.container {
+  /* max-width: calc(100vw - 40px); */
+  margin: auto;
 }
 
 
 body{
   background-image: linear-gradient(#ED5E50, #F48658, #DB4A48);
+}
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 57%;
+  /* change  paddingtop percent based on ratio of video. this one is for 9/16 */
 }
 
 iframe  {
@@ -21,14 +23,17 @@ iframe  {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
 
 .header-image {
   position: absolute;
-  width:  100vw;
-  /* z-index: 2; */
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 0;
 }
 
@@ -38,21 +43,15 @@ iframe  {
   z-index: 1;
 }
 
-.resp-container {
-  position: relative;
- overflow: hidden;
- padding-top: 42%;
- /* change  paddingtop percent based on ratio of video. this one is for 9/16 */
-}
+
+
 
 
 h2 {
   text-align: center;
   padding-top: 10vw;
   color:white;
-  /* font-family: 'facit', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-
   font-weight: bolder;
   font-size: 40px;
 }
@@ -107,14 +106,21 @@ p bottomp {
   filter: drop-shadow(0px 5px 10px black);
   margin:auto;
   display: flex;
-align-items: center;
-justify-content: center
+  align-items: center;
+  justify-content: center
 
 
 }
 
 .can:hover > img {
     animation: float 3s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 6px;
+    padding: 12px 29px;
+  }
 }
 
 .can button {
@@ -145,8 +151,7 @@ justify-content: center
 
 .cloud-thing {
     position: absolute;
-    padding-top: 200px;
-    width: 120vw;
+    /* width: 120vw; */
 }
 
 .footer img {
