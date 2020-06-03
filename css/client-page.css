@@ -15,6 +15,8 @@ body{
 }
 
 .framing-container {
+
+  padding-top: 40px;
   width: 70vw;
   margin: auto;
 }
@@ -73,10 +75,16 @@ p bottomp {
   padding-bottom: 20px;
 }
 
+.gallery {
+  width: 100vw;
+  margin: -20px;
+}
+
 
 .can  {
   display: inline-block;
-  padding: 50px;
+  padding: 5vw;
+  width: 25vw;
   position:relative;
 }
 
@@ -97,10 +105,12 @@ p bottomp {
 }
 
 .can img {
-  /* width: 15vw; */
-  max-height: 800px;
+  width: 16vw;
+  /* height: 800px; */
   min-width: 100px;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   filter: drop-shadow(0px 5px 10px black);
   margin:auto;
   display: flex;
@@ -149,6 +159,8 @@ p bottomp {
 
 .cloud-thing {
     position: absolute;
+
+
     /* width: 120vw; */
 }
 
