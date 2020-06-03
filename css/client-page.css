@@ -10,11 +10,12 @@ body{
 
 .header-image {
   position: absolute;
-  top: 0;
+  top: 30;
+  max-width: calc(100vw - 40px);
 }
 
 .framing-container {
-  width: 80vw;
+  width: 70vw;
   margin: auto;
 }
 
@@ -72,13 +73,6 @@ p bottomp {
   padding-bottom: 20px;
 }
 
-
-.scroll-menu {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(6, calc(33% - 40px));
-    grid-template-rows: minmax(150px, 1fr);
-}
 
 .can  {
   display: inline-block;

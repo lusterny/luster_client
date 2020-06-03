@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/slick-1.8.0.js"></script>
   </head>
 
 
@@ -41,9 +42,10 @@
 
 
 
+
     <section>
         <img class='cloud-thing' src="assets/clouds.png"></img>
-        <div class="scroll-menu">
+        <div class="gallery">
             <div class="can">
                 <img src="assets/beer_atomic.png"><br>
                 <button type="button" name="button">BUY NOW</button>
@@ -66,6 +68,22 @@
             </div>
         </div>
     </section>
+
+
+          <script>
+
+    $('.gallery').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        focusOnSelect: true,
+        speed: 500,
+        touchThreshold: 10,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+  </script>
 
     <section class='footer'>
       <p>Sponsored By:</p>
