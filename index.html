@@ -72,6 +72,41 @@
 
           <script>
 
+          function wheelFix(element) {
+      var lastStamp = new Date()
+      var lastWheel = 0
+      element.on('wheel', (function(e) {
+        // only act on events that scroll more horizontally than vertically
+        if (Math.abs(e.originalEvent.deltaX) > Math.abs(e.originalEvent.deltaY)) {
+          e.preventDefault()
+          // calculate the differences from the last recorded event
+          let timeDiff = new Date() - lastStamp
+          let wheelDiff = Math.abs(lastWheel - e.originalEvent.deltaX)
+          // a lot of time we won't want to scroll
+          var shouldScroll = false
+          // if it's been more than 500 milliseconds, since the last event, treat it as new
+          if (timeDiff > 500) {
+            shouldScroll = true
+          }
+          // if the scroll is sufficiently different from the last scroll, treat it as new
+          if (wheelDiff > 40) {
+            shouldScroll = true
+          }
+          if (shouldScroll) {
+            if (e.originalEvent.deltaX > 0) {
+              $(this).slick('slickNext');
+            } else {
+              $(this).slick('slickPrev');
+            }
+          }
+          // record the newest timestamp and delta
+          lastStamp = new Date()
+          lastX = e.originalEvent.deltaX
+        }
+      }));
+    }
+    wheelFix($(".gallery"));
+
     $('.gallery').slick({
       // accessibility: true;
         dots: false,
