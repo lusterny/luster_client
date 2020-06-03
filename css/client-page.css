@@ -114,8 +114,8 @@ p bottomp {
   /* margin:auto; */
   display: flex;
   align-items: center;
-  justify-content: center
-
+  justify-content: center;
+  
 
 }
 
@@ -131,6 +131,7 @@ p bottomp {
 }
 
 .can button {
+
   margin: 0;
   position: absolute;
   left: 50%;
@@ -164,11 +165,12 @@ p bottomp {
 .bottom-section {
   display: flex;
   justify-content: center;
-  margin-top: 5vw;
-  margin-bottom: 7vw;
+  margin-top: 10vw;
+  margin-bottom: 15vw;
 }
 
 .footer img {
+
   margin: auto;
   width: 150px;
   display: block;
