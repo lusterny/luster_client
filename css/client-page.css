@@ -33,6 +33,10 @@ body{
   z-index: 1;
 }
 
+.top-page img {
+  height: auto;
+}
+
 .resp-container {
   position: relative;
   overflow: hidden;
