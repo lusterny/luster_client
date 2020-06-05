@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/slick-1.8.0.js"></script>
@@ -50,32 +50,42 @@
         <img class='cloud-thing' src="assets/clouds.png"></img>
         <div class="gallery">
             <div class="can">
-                <img src="assets/beer_atomic.png"><br>
+              <div class="can-wrap">
+                <img src="assets/beer_atomic.png">
                 <button type="button" name="button">BUY NOW</button>
+              </div>
             </div>
             <div class="can">
-                <img  src="assets/beer_banana.png"><br>
+              <div class="can-wrap">
+                <img  src="assets/beer_banana.png">
                 <button type="button" name="button">BUY NOW</button>
+              </div>
             </div>
             <div class="can">
-                <img src="assets/beer_brevity.png"><br>
+              <div class="can-wrap">
+                <img src="assets/beer_brevity.png">
                 <button type="button" name="button">BUY NOW</button>
+              </div>
             </div>
             <div class="can">
-                <img src="assets/beer_escape.png"><br>
+              <div class="can-wrap">
+                <img src="assets/beer_escape.png">
                 <button type="button" name="button">BUY NOW</button>
+              </div>
             </div>
             <div class="can">
-                <img  src="assets/beer_fire.png"><br>
+              <div class="can-wrap">
+                <img  src="assets/beer_fire.png">
                 <button type="button" name="button">BUY NOW</button>
+              </div>
             </div>
         </div>
     </section>
 
 
-          <script>
+    <script>
 
-          function wheelFix(element) {
+      function wheelFix(element) {
       var lastStamp = new Date()
       var lastWheel = 0
       element.on('wheel', (function(e) {
@@ -125,9 +135,10 @@
   </script>
 
     <section class='footer'>
-      <p>Powered By:</p>
+      <p>Powered By</p>
       <a href="https://luster.cc/">
-      <img  src="assets/luster-logo.svg"></img></a>
+        <img src="assets/luster-logo.svg">
+      </a>
     </section>
 
   </div>
