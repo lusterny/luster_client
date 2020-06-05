@@ -10,20 +10,21 @@ body{
 
 .image-container {
     /* position: relative; */
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    left: 5%;
 }
 
 .header-image {
-  position: absolute;
-  /* left: -10px; */
-  top: 20;
-  left: -3px;
-  width: 120%;
+
+
+
 }
 
 .framing-container {
-
   top: 40;
-  width: 75vw;
+  width: 70vw;
   margin: auto;
 }
 
