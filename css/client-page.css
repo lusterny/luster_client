@@ -1,6 +1,7 @@
 .container {
   max-width: calc(100vw - 40px);
   margin: auto;
+  position: relative;
 }
 
 
@@ -9,23 +10,20 @@ body{
 }
 
 .image-container {
-    /* position: relative; */
-    position: absolute;
-    top: 20px;
-    width: 90%;
-    left: 5%;
+  position: absolute;
+  top: 5vw;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header-image {
-
-
 
 }
 
 .framing-container {
   top: 40;
-  width: 70vw;
-  margin: auto;
+   width: 65vw;
+   margin: 5vw auto;
 }
 
 .top-page{
@@ -183,10 +181,15 @@ p bottomp {
 .footer img {
 
   margin: auto;
-  width: 150px;
+  width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
 }
 
 .footer {
