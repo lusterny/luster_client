@@ -126,7 +126,6 @@ p bottomp {
 }
 
 .can img:after{
-
   content:'';
   display: block;
   position: absolute;
@@ -137,7 +136,6 @@ p bottomp {
   background: transparent;
   border-radius: 100px;
   box-shadow: 0 50px 40px rgba(0,0,0,1);
-
 }
 
 
